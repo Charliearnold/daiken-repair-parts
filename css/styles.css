@@ -18,7 +18,7 @@ body {
 h1, h2, h3 {
     margin:0px;
     padding:0px;
-    color:#FFFFFF;
+    color:#000000;
 }
 
 h1 {
@@ -40,8 +40,29 @@ a:hover {
     color:#AEAEAE;
     
 }
-/* =============Header styles============= */
 
+figure{
+    padding:25px;
+    background-color:#EF411C;
+    display: inline-block;
+    border-radius:6px;
+    box-shadow:6px 6px 6px #000000;
+    float:left;
+    
+}
+figcaption{
+    text-align:center;
+    font-size:1.25em;
+    color:#000000;
+    
+}
+main{
+    width:1200px;
+    overflow:hidden;
+    margin:20px auto;
+    
+}
+/* =============Header styles============= */
 
 header {
     position:absolute;
@@ -52,6 +73,10 @@ header {
 
 #logo{
     color:#AEAEAE;
+    position:relative;
+    top:20px;
+    left:20px;
+    
 }
 
 #logo:hover {
@@ -66,4 +91,89 @@ header {
     border-top:6px solid #FF7900;
     background-color:#AEAEAE;
     background-image:url(images/banner-home.jpg) no-repeat center center #FF7900;
+    background-size:cover;
+}
+
+#bannerText {
+    color:#ffffff;
+    font-size:6em;
+    text-align: center;
+    text-shadow: -6px 6px 6px #000000;
+}
+/*====================NAVIGATION STYLES=============================*/
+
+#menu{
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+
+#menu ul li {
+    display: inline-block;
+    margin:15px 20px 15px 20px ;
+    
+}
+.currentPage{
+    color:#000000;
+}
+/*========================THREE COLUMN STYLES========================*/
+
+.columnA , .columnB , .columnC {
+    width:384px;
+}
+
+.columnA, .columnB {
+    float:left;
+    margin-right:24px;
+}
+/*  
+1200px
+384px x 3 = 1152px This is the width of the colmns.
+24px x 2 = 48px This is the width of the two margins on the side of the page.
+
+total 1200px
+*/
+.columnC {
+    float:left;
+    /*border:solid 1px #000000;*/
+}
+.columnA h2, .columnB h2 , .columnC h2{
+    font-size:3.5em;
+    font-weight:700;
+    text-align:center;
+    margin:15px 0px;
+    /*??????*/
+} 
+
+.columnA p, .columnB p, .columnC p{
+    padding:0px;
+    text-align: justify;
+    
+}
+
+.columnA span, .columnB span, .columnC span {
+    background-color:#FF7900;
+    color: #000000;
+    display:block;
+    font-size:1.75em;
+    font-weight:600;
+    text-align:center;
+    padding:6px 0px;
+    
+} 
+
+/* BUTTON STYLES */
+
+
+.button {
+	background-color: #993366; /*violet*/
+	border-radius:8px;
+	padding:15px 30px;
+	text-decoration: none;
+	color: #FFFFFF;
+	display: inline-block;
+	font-weight: 400;
+		
+}
+.button:hover {background-color:#0000ff; /*This color is blue. Charlie. 05-25-2016 */
 }
